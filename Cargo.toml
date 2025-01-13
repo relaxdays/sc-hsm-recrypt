@@ -1,0 +1,16 @@
+[package]
+name = "sc-hsm-recrypt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes = "0.8.4"
+anyhow = "1.0.95"
+cbc = { version = "0.1.2", features = ["std"] }
+clap = "4.5.26"
+crossterm = "0.28.1"
+crypto-bigint = "0.5.5"
+crypto-primes = "0.5.0"
+md5 = "0.7.0"
+rand = "0.8.5"
+vsss-rs = "5.0.0"

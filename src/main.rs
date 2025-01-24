@@ -121,7 +121,7 @@ fn main_result(args: Args) -> anyhow::Result<()> {
         &[vsss_rs::ParticipantIdGeneratorType::sequential(
             Some(Identifier::new(&crypto_bigint::U64::ONE, new_modulus)),
             Some(Identifier::new(&crypto_bigint::U64::ONE, new_modulus)),
-            NonZero::new(3).unwrap(),
+            NonZero::new(args.shares_total).unwrap(),
         )],
     )
     .unwrap();
